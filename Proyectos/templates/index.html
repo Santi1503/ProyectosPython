@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            {% for video in datos %}
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" height="100"
+                        src="http://www.dailymotion.com/thumbnail/video/{{ video['id']  }}" alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">{{ video['channel'] }}</h6>
+                        <p class="card-text">{{ video['title'] }}</p>
+
+                        <a name="" id="" class="btn btn-primary"
+                            href="http://www.dailymotion.com/video/{{ video['id']  }}" role="button">ver mas</a>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+</body>
+
+</html>
