@@ -6,7 +6,7 @@ datos = ulr.urlopen(
     'https://pyautogui.readthedocs.io/en/latest/').read().decode()
 
 tm.sleep(5)
-pg.moveTo(144, 1060)
+pg.moveTo(670, 1052)
 pg.click()
 tm.sleep(1)
 pg.typewrite("Bloc de notas")

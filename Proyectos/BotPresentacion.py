@@ -7,14 +7,14 @@ tm.sleep(5)
 
 
 webbrowser.open("https://web.whatsapp.com")
-tm.sleep(5)
-pg.moveTo(130, 200)
+tm.sleep(7)
+pg.moveTo(278, 215)
 pg.click()
-pg.typewrite("Reconco")
+pg.typewrite("Geff")
 pg.press("enter")
 
 tm.sleep(3)
-pg.moveTo(501, 1007)
+pg.moveTo(783, 979)
 pg.click()
 pg.typewrite("Hola soy Corvex, el bot de Santiago :)")
 pg.press("enter")

@@ -1,6 +1,6 @@
 import qrcode
 
-data = "https://www.instagram.com/santigt1503/"
+data = "https://kronos.ctdesarrollo-sdr.org/login"
 
 qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=10, border=4)
 
