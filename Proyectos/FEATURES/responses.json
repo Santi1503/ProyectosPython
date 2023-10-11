@@ -1,0 +1,98 @@
+{
+    "intents": [
+      {
+        "tag": "Saludo",
+        "patterns": [
+          "Hola",
+          "Buenas",
+          "Ayuda",
+          "Aydame",
+          "Buenos dias",
+          "Buenas tardes"
+        ],
+        "responses": [
+          "Hola, estoy para ayudarte",
+          "Dime que necesitas",
+          "Estoy a tus ordenes"
+        ]
+      },
+      {
+        "tag": "Despedida",
+        "patterns": ["Adios", "Hasta luego", "Nos vemos"],
+        "responses": [
+          "Hasta luego",
+          "Espero haberte ayudado"
+        ]
+      },
+      {
+        "tag": "Agradecimientos",
+        "patterns": ["Gracias", "Muchas gracias", "gracias por la ayuda", "gracias por todo"],
+        "responses": ["Ha sido un placer", "No hay de que", "Un placer"]
+      },
+      {
+        "tag": "Crear sedes",
+        "patterns": [
+          "¿Cómo creo una sede?",
+          "¿Cómo se hace una sede?",
+          "¿Cómo hacer una sede?",
+          "¿Cómo se realizan las sedes",
+          "¿Cómo realizar una sede?",
+          "¿Cómo realizar un registro?",
+          "¿Cómo se realiza un registro?"
+        ],
+        "responses": [
+          "Para hacer una sede, tienes que ir a nuevo contenido de envio y llenar los parametros que se te solicitan. Recuerda que el nombre siempre empieza con el tipo de envio, luego la sede y por último el área y programa. Por ejemplo: Mail Info - AR - CI - IPMII"
+        ]
+      },
+      {
+        "tag": "Configurar sedes",
+        "patterns": [
+          "¿Cuántas sedes se tienen que configurar?",
+          "¿Cuántas sedes se tienen que hacer?",
+          "¿Cuántas sedes se crean?",
+          "¿Cuántas sedes se tienen que crear?"
+        ],
+        "responses": [
+          "Se tienen que configurar 29 sedes. 23 sedes de habla hispana y 6 de habla portuguesa. Las abreviaturas de las sedes se encuentran en: 'https://drive.google.com/file/d/1Oj28DuNTTHpS9kOm8TkHk2aaxuHqzehT/view'. De igual manera el HTML que se necesita usar esta aquí: 'https://drive.google.com/drive/folders/12-7Esk7mTBNXW0rPoswLFy_bej-1kC0n?usp=sharing'"
+        ]
+      },
+      {
+        "tag": "Adjuntar archivos",
+        "patterns": [
+          "¿Cómo se adjuntan documentos?",
+          "¿Cómo se adjuntan archivos",
+          "Adjuntar archivos en local",
+          "Adjuntar archivos en producción",
+          "¿Cómo adjuntar archivos?"
+        ],
+        "responses": [
+          "Para adjuntar archivos en local se tienen que subir desde el apartado de 'archivos adjuntos' y darle a 'nuevo'. Luego se sube un archivo desde la computadora. Para adjuntar archivos en producción, se tienen que encadenar del contenido general de la misma área. Los archivos adjuntos estan aquí: 'https://drive.google.com/drive/folders/1g41nyEFqffp2NOXZ1FUjymaiqx6r4AXA?usp=sharing'"
+        ]
+      },
+      {
+        "tag": "Sistema de Gestion",
+        "patterns": [
+          "Link del sistema de gestión",
+          "¿Cuál es el link del sistema de gestión?",
+          "Sistema de Gestión",
+          "sistema de gestion",
+          "Sistema de gestión"
+        ],
+        "responses": [
+          "El link del sistema de gestion en local es: 'http://esec-team.ctdesarrollo.org/team-sublime/sirius-app/Escritorio/login' , y el de produccion es: 'https://sg.funiber.org/si/Escritorio/login'"
+        ]
+      },
+      {
+        "tag": "Consultas",
+        "patterns": [
+          "¿En qué me puedes ayudar?",
+          "¿Qué funciones tienes?",
+          "¿Qué te puedo preguntar?",
+          "¿Cómo me ayudas?"
+        ],
+        "responses": [
+          "Me puedes consultar: creación de sedes, configuración de sedes, adjuntar archivos, sistema de gestión, drive de plantillas"
+        ]
+      }
+    ]
+  }
