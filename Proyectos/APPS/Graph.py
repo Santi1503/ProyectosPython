@@ -54,6 +54,7 @@ def create_graph():
 
 window = Tk()
 window.title('Generador de Gráficos')
+window.geometry("400x300")
 
 graph_type_label = Label(window, text='Elija el tipo de gráfico:')
 graph_type_label.pack()
