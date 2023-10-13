@@ -13,6 +13,7 @@ def readText():
     engine.say(textIn)
     engine.runAndWait()
 
+
 window = tk.Tk()
 window.title("Lector de texto")
 
