@@ -1,14 +1,16 @@
 from pynput.mouse import Controller
-from pynput.keyboard import Controller
+#from pynput.keyboard import Controller
 
+i = 1
 
 def controlMouse():
     mouse = Controller()
-    mouse.position = (3000,200)
+    mouse.position = (300,200)
     
-def controlKeyboard():
+while i == 1:
+    controlMouse()
+"""def controlKeyboard():
     keyboard = Controller()
-    keyboard.type("Hola que estamos haciendoooooooooooo")
-
-controlKeyboard()
+    keyboard.type("Hola que estamos haciendoooooooooooo")"""
+#controlMouse()
 
