@@ -11,13 +11,14 @@ def generatePass(length):
 
 @app.route('/')
 def index():
-    return render_template('../../Proyectos/templates/PassGen.html')
+    return render_template('PassGen.html')
 
 @app.route('/generate', methods=['POST'])
 def generate():
     length = int(request.form['longitud'])
     passw = generatePass(length)
-    return render_template('../../Proyectos/templates/PassGen.html', passw=passw)
+    print(generatePass)
+    return render_template('PassGen.html', passw=passw)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5203, debug=True)

@@ -10,7 +10,7 @@ def index():
         'https://api.dailymotion.com/videos?channel=sport&limit=10')
     datosFormatoJSON = datosObtenidos.json()
     print(datosFormatoJSON)
-    return render_template('index.html', datos=datosFormatoJSON['list'])
+    return render_template('../templates/index.html', datos=datosFormatoJSON['list'])
 
 
 if __name__ == '__main__':
