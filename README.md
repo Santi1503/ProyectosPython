@@ -8,7 +8,7 @@
 
 3. Then, you see the readme files that appears in each folder to know with libraries you need to install in order to use the proyects that are in that folder :monocle_face:
 
-4. Enjoy coding :nerd_face:
+4. Enjoy coding :partying_face:
 
 ## Estructure :mechanic:
 
@@ -25,13 +25,12 @@
     |     ├── posicionMouse.py
     |     ├── qrCode.py
     |     ├── Scraping.py
-    |     ├── settings.py
     |     ├── ShortLink.py
     |     ├── testInternet.py
     |     ├── TextReader.py
     |     ├── Traductor.py
     |     ├── WeatherApp.py
-    |     ├── webScrapping.py
+    |     └── webScrapping.py
     ├── BOTS
     |     ├── AsistenteVirtual.py
     |     ├── AutoClicker.py
@@ -45,30 +44,27 @@
     |     ├── ChatBot1.py
     |     ├── smartClicker.py
     |     ├── spamer.py
-    |     ├── textAnalizer.py
+    |     └── textAnalizer.py
     ├── FEATURES
     |     ├── key.key
     |     ├── mensaje1.txt
-    |     ├── mensajes.txt
-    |     ├── responses.json
+    |     └── mensajes.txt
     ├── GAMES
     |     ├── connect4.py
     |     ├── memeGenerator.py
     |     ├── moviesRecommendation.py
-    |     ├── passGuess.py
+    |     └── passGuess.py
     ├── PassGen
     |     ├── templates
     |     |     ├── PassGen.html
-    |     |     ├── password_manager.html
-    |     ├── PassGen.py
+    |     |     └── password_manager.html
+    |     └── PassGen.py
     ├── templates
-    |     ├── index.html
+    |     └── index.html
     ├── VIRUS
     |     ├── mouseListener.py
     |     ├── PyKey.py
     |     ├── trainingKey.py
     |     ├── Virus.py
-    |     ├── VirusStart.py
-    ├── README.md
-  
- 
+    |     └── VirusStart.py
+    └── README.md
