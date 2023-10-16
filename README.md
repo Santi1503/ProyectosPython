@@ -12,63 +12,63 @@
 
 ## Estructure :mechanic:
 
-  Proyextos/
-  ├── APPS
-  |     ├── app.py
-  |     ├── decrypt.py
-  |     ├── ejercicio.py
-  |     ├── encrypt.py
-  |     ├── Graph.py
-  |     ├── interfaz.py
-  |     ├── main.py
-  |     ├── Network.py
-  |     ├── posicionMouse.py
-  |     ├── qrCode.py
-  |     ├── Scraping.py
-  |     ├── settings.py
-  |     ├── ShortLink.py
-  |     ├── testInternet.py
-  |     ├── TextReader.py
-  |     ├── Traductor.py
-  |     ├── WeatherApp.py
-  |     ├── webScrapping.py
-  ├── BOTS
-  |     ├── AsistenteVirtual.py
-  |     ├── AutoClicker.py
-  |     ├── BotPresentacion.py
-  |     ├── BotPresentacionVoz.py
-  |     ├── botSpam.py
-  |     ├── BotSpamMasivo.py
-  |     ├── botVirus.py
-  |     ├── chat.py
-  |     ├── ChatBot.py
-  |     ├── ChatBot1.py
-  |     ├── smartClicker.py
-  |     ├── spamer.py
-  |     ├── textAnalizer.py
-  ├── FEATURES
-  |     ├── key.key
-  |     ├── mensaje1.txt
-  |     ├── mensajes.txt
-  |     ├── responses.json
-  ├── GAMES
-  |     ├── connect4.py
-  |     ├── memeGenerator.py
-  |     ├── moviesRecommendation.py
-  |     ├── passGuess.py
-  ├── PassGen
-  |     ├── templates
-  |     |     ├── PassGen.html
-  |     |     ├── password_manager.html
-  |     ├── PassGen.py
-  ├── templates
-  |     ├── index.html
-  ├── VIRUS
-  |     ├── mouseListener.py
-  |     ├── PyKey.py
-  |     ├── trainingKey.py
-  |     ├── Virus.py
-  |     ├── VirusStart.py
-  ├── README.md
+    Proyextos/
+    ├── APPS
+    |     ├── app.py
+    |     ├── decrypt.py
+    |     ├── ejercicio.py
+    |     ├── encrypt.py
+    |     ├── Graph.py
+    |     ├── interfaz.py
+    |     ├── main.py
+    |     ├── Network.py
+    |     ├── posicionMouse.py
+    |     ├── qrCode.py
+    |     ├── Scraping.py
+    |     ├── settings.py
+    |     ├── ShortLink.py
+    |     ├── testInternet.py
+    |     ├── TextReader.py
+    |     ├── Traductor.py
+    |     ├── WeatherApp.py
+    |     ├── webScrapping.py
+    ├── BOTS
+    |     ├── AsistenteVirtual.py
+    |     ├── AutoClicker.py
+    |     ├── BotPresentacion.py
+    |     ├── BotPresentacionVoz.py
+    |     ├── botSpam.py
+    |     ├── BotSpamMasivo.py
+    |     ├── botVirus.py
+    |     ├── chat.py
+    |     ├── ChatBot.py
+    |     ├── ChatBot1.py
+    |     ├── smartClicker.py
+    |     ├── spamer.py
+    |     ├── textAnalizer.py
+    ├── FEATURES
+    |     ├── key.key
+    |     ├── mensaje1.txt
+    |     ├── mensajes.txt
+    |     ├── responses.json
+    ├── GAMES
+    |     ├── connect4.py
+    |     ├── memeGenerator.py
+    |     ├── moviesRecommendation.py
+    |     ├── passGuess.py
+    ├── PassGen
+    |     ├── templates
+    |     |     ├── PassGen.html
+    |     |     ├── password_manager.html
+    |     ├── PassGen.py
+    ├── templates
+    |     ├── index.html
+    ├── VIRUS
+    |     ├── mouseListener.py
+    |     ├── PyKey.py
+    |     ├── trainingKey.py
+    |     ├── Virus.py
+    |     ├── VirusStart.py
+    ├── README.md
   
  
