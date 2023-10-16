@@ -1,0 +1,62 @@
+# You are in the BOTS folder :nerd_face:
+
+## Libraries to install for each project with a command :technologist:
+
+        - AsistenteVirtual.py
+            - pip install SpeechRecognition
+            - pip install pyttsx3
+        - AutoClicker.py
+            - pip install pyautogui
+            - pip install time
+        - BotPresentacion.py
+            - pip install pycopy-webbrowser
+            - pip install pyautogui
+            - pip install time
+            - pip install SpeechRecognition
+            - pip install pyttsx3
+        - BotPresentacionVoz.py
+            - pip install pycopy-webbrowser
+            - pip install pyautogui
+            - pip install time
+            - pip install SpeechRecognition
+            - pip install ptyysx3
+        - botSpam.py
+            - pip install pyautogui 
+            - pip install time
+        - BotSpamMasivo.py
+            - pip install pyautogui
+            - pip install time
+        - botVirus.py
+            - pip install boolean
+            - pip install pyautogui
+            - pip install time
+        - chat.py
+            - pip install tkinter
+            - pip install get-response
+        - ChatBot.py
+            - pip install random
+            - pip install langcodes
+        - ChatBot1.py
+            - pip install random
+            - pip install json
+            - pip install torch
+            - pip install neralnet
+            - pip install nltk
+        - smartClicker.py
+            - pip install pyautogui
+            - pip install time
+            - pip install keyboard
+            - pip install random
+            - pip install win32api
+            - pip install win32con
+        - spamer.py
+            - pip install pyautogui
+            - pip install webbrowser
+            - pip install time
+        - textAnalizer.py
+            - pip install tkinter
+            - pip install textblob
+            - pip install nltk
+            - pip install string
+
+#  Enjoy your coding :partying_face: 
