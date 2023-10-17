@@ -12,7 +12,7 @@
 
 ## Estructure :mechanic:
 
-    Proyextos/
+    Proyectos/
     ├── APPS
     |     ├── app.py
     |     ├── decrypt.py
