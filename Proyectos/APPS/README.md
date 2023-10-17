@@ -27,7 +27,8 @@
             - pip install pandas
             - pip install time
         - ShortLink.py
-            - 
+            - pip install tkinter
+            - pip install requests
         - testInternet.py
             - pip install speedtest
             - pip install time
