@@ -12,6 +12,7 @@
 
 ## Estructure :mechanic:
 
+    README.md
     Proyectos/
     ├── APPS
     |     ├── app.py
@@ -67,4 +68,4 @@
     |     ├── trainingKey.py
     |     ├── Virus.py
     |     └── VirusStart.py
-    └── README.md
+    └──
