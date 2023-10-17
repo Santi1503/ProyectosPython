@@ -6,7 +6,7 @@
 
 2. Now, you need to go to the "Proyectos" folder and, depending on the proyect that you want, you need to search in each folder the proyect that you want (I really tried to separate them the best way posible) :thinking:
 
-3. Then, you see the readme files that appears in each folder to know with libraries you need to install in order to use the proyects that are in that folder :monocle_face:
+3. Then, you see the readme files that appears in each folder to know which libraries you need to install in order to use the proyects that are in that folder :monocle_face:
 
 4. Enjoy coding :partying_face:
 
