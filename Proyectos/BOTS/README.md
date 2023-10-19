@@ -58,5 +58,7 @@
             - pip install textblob
             - pip install nltk
             - pip install string
+        - CultivoVirtual.py
+            - pip install random
 
 #  Enjoy your coding :partying_face: 
