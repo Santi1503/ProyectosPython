@@ -10,5 +10,13 @@
             - pip install pillow
             - pip install numpy
             - pip install tensorflow
+        - flappyMachine.py
+            - pip install pygame
+            - pip install random
+            - pip install tensorflow
+            - pip install numpy
+        - consoleFlappyMachine.py
+            - pip install pygame
+            - pip install random
 
 #  Enjoy your coding :partying_face: 
