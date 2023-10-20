@@ -7,5 +7,7 @@
             - pip install tkinter
             - pip install numpy
             - pip install keras
+        - testCreator.py
+            - pip install transformers
 
 #  Enjoy your coding :partying_face: 
