@@ -2,34 +2,31 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
-movies = pd.read_csv('/Proyectos/movies.csv')
-ratings = pd.read_csv('/Proyectos/ratings.csv')
-
-
-movie_ratings = pd.merge(ratings, movies, on='movieId')
-
+data = pd.read_csv('../../Proyectos/BOTS/netflix_titles.csv')
 
 tfidf_vectorizer = TfidfVectorizer(stop_words='english')
-tfidf_matrix = tfidf_vectorizer.fit_transform(movies['genres'])
+tfidf_matrix = tfidf_vectorizer.fit_transform(data['sinopsis'])
+consine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
 
-cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
+def GetRecommendations(title):
+    idx = data[data['title'] == title].index[0]
+    sim_scores = list(enumerate(consine_sim[idx]))
+    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+    sim_scores = sim_scores[1:11]
+    movie_indices = [i[0] for i in sim_scores]
+    return data['title'].iloc[movie_indices]
 
-def get_recommendations(genre, cosine_sim=cosine_sim):
-    genre_movies = movies[movies['genres'].str.contains(genre)]
-    movie_indices = pd.Series(genre_movies.index, index=genre_movies['title'])
+while True:
+    print("Bienvenido al sistema de recomendación de peluculas")
+    movie_title = input("Ingrese el título de la pelicula que te guste (o escribe 'salir' para salir)")
 
-    cosine_scores = list(enumerate(cosine_sim[movie_indices['title']]))
+    if movie_title.lower() == 'salir':
+        print("Hasta luego :)")
+        break
 
-    cosine_scores = sorted(cosine_scores, key=lambda x: x[1], reverse=True)
-
-    top_movies_indices = [i[0] for i in cosine_scores[1:11]]
-    top_movies = movies.iloc[top_movies_indices]
-
-    return top_movies['title']
-
-user_genre = input("Ingresa el género de película que deseas ver: ")
-
-recommendations = get_recommendations(user_genre)
-
-print("\nTop 10 películas recomendadas del género", user_genre, ":\n")
-print(recommendations)
+    if movie_title in data['title'].values:
+        recommendations = GetRecommendations(movie_title)
+        print("\nPeliculas similares a ", movie_title , " son : ")
+        print(recommendations)
+    else:
+        print("No se encontro una película con ese titulo")
