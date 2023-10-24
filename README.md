@@ -51,6 +51,7 @@
     |     ├── mensaje1.txt
     |     └── mensajes.txt
     ├── GAMES
+    |     ├── ChessPlayer.py
     |     ├── connect4.py
     |     ├── memeGenerator.py
     |     ├── moviesRecommendation.py

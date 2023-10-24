@@ -2,6 +2,10 @@
 
 ## Libraries to install for each project with a command :technologist:
 
+        - ChessPlayer.py
+            - pip install tkinter
+            - pip install random
+            - pip install chess
         - connect4.py
             - pip istall numpy
             - pip install multiprocessing
