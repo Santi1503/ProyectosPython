@@ -43,6 +43,10 @@
     |     ├── chat.py
     |     ├── ChatBot.py
     |     ├── ChatBot1.py
+    |     ├── CultivoVirtual.py
+    |     ├── Love.py
+    |     ├── netflix_titles.csv
+    |     ├── ReconocimientoVoz.py
     |     ├── smartClicker.py
     |     ├── spamer.py
     |     └── textAnalizer.py
