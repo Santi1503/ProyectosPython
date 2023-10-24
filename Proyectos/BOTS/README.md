@@ -42,6 +42,12 @@
             - pip install torch
             - pip install neralnet
             - pip install nltk
+        - CultivoVirtual.py
+            - pip install random
+        - Love.py
+            - pip install turtle
+        - ReconocimientoVoz.py
+            - pip install SpeechRecognition
         - smartClicker.py
             - pip install pyautogui
             - pip install time
