@@ -79,6 +79,7 @@
     ├── VIRUS
     |     ├── mouseListener.py
     |     ├── PyKey.py
+    |     ├── ScreenshotTaker.py
     |     ├── trainingKey.py
     |     ├── Virus.py
     |     └── VirusStart.py

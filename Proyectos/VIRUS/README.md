@@ -4,6 +4,9 @@
 
         - PyKey.py
             - pip install pynput
+        - ScreenshotTaker.py
+            - pip install pyautogui
+            - pip install pynput
         - Virus.py
             - pip install turtle 
         - VirusStart.py
