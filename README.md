@@ -29,6 +29,7 @@
     |     ├── ShortLink.py
     |     ├── testInternet.py
     |     ├── TextReader.py
+    |     ├── Timer.py
     |     ├── Traductor.py
     |     ├── WeatherApp.py
     |     └── webScrapping.py

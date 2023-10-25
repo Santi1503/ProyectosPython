@@ -38,6 +38,8 @@
         - TextReader.py
             - pip install tkinter
             - pip install pyttsx3
+        - Timer.py
+            - pip install timer
         - Traductor.py
             - pip install requests
         - WeatherApp.py
