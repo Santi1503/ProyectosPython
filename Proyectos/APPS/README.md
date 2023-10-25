@@ -44,6 +44,10 @@
             - pip install requests
         - WeatherApp.py
             - pip install requests
+        - WeatherNotification.py
+            - pip install requests
+            - pip install plyer
+            - pip install time
         - webScrapping.py
             - pip install urllib3
             - pip install pyautogui
