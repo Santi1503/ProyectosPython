@@ -52,6 +52,9 @@
     |     ├── smartClicker.py
     |     ├── spamer.py
     |     └── textAnalizer.py
+    ├── ExpenseTracker
+    |     ├── Tracker.py
+    |     └── ExpenseTracker.db 
     ├── FEATURES
     |     ├── key.key
     |     ├── mensaje1.txt
