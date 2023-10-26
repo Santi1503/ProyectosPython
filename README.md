@@ -51,7 +51,8 @@
     |     ├── ReconocimientoVoz.py
     |     ├── smartClicker.py
     |     ├── spamer.py
-    |     └── textAnalizer.py
+    |     ├── textAnalizer.py
+    |     └── TextToSpeech.py
     ├── ExpenseTracker
     |     ├── Tracker.py
     |     └── ExpenseTracker.db 

@@ -64,7 +64,7 @@
             - pip install textblob
             - pip install nltk
             - pip install string
-        - CultivoVirtual.py
-            - pip install random
+        - TextToSpeech.py
+            - pip install pyttsx3
 
 #  Enjoy your coding :partying_face: 
