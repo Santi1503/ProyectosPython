@@ -18,5 +18,8 @@
             - pip istall sklearn
         - passGuess.py
             - pip install random 
+        - tetri.py
+            - pip install random
+            - pip install pygame
 
 #  Enjoy your coding :partying_face: 

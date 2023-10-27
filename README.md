@@ -65,7 +65,8 @@
     |     ├── connect4.py
     |     ├── memeGenerator.py
     |     ├── moviesRecommendation.py
-    |     └── passGuess.py
+    |     ├── passGuess.py
+    |     └── tetris.py
     ├── Machine Learning
     |     ├── clasificarImagenes.py
     |     └── textCreator.py
