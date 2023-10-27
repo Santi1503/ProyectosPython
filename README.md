@@ -56,6 +56,8 @@
     ├── ExpenseTracker
     |     ├── Tracker.py
     |     └── ExpenseTracker.db 
+    ├── FaceRecognition
+    |     └──  faceRecognition.py 
     ├── FEATURES
     |     ├── key.key
     |     ├── mensaje1.txt
