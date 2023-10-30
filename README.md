@@ -15,6 +15,19 @@
     README.md
     Proyectos/
     ├── APPS
+    |     ├── ExpenseTracker
+    |     |     ├── Tracker.py
+    |     |     └── ExpenseTracker.db
+    |     ├── FaceRecognition
+    |     |     └──  faceRecognition.py
+    |     ├── PassGen
+    |     |     ├── templates
+    |     |     |     ├── PassGen.html
+    |     |     |     └── password_manager.html
+    |     |     └── PassGen.py
+    |     ├── StudentsManagement
+    |     |     ├── StudentManagement.py
+    |     |     └── StudentManagement.db 
     |     ├── app.py
     |     ├── decrypt.py
     |     ├── ejercicio.py
@@ -53,11 +66,6 @@
     |     ├── spamer.py
     |     ├── textAnalizer.py
     |     └── TextToSpeech.py
-    ├── ExpenseTracker
-    |     ├── Tracker.py
-    |     └── ExpenseTracker.db 
-    ├── FaceRecognition
-    |     └──  faceRecognition.py 
     ├── FEATURES
     |     ├── key.key
     |     ├── mensaje1.txt
@@ -72,19 +80,11 @@
     ├── Machine Learning
     |     ├── clasificarImagenes.py
     |     └── textCreator.py
-    ├── PassGen
-    |     ├── templates
-    |     |     ├── PassGen.html
-    |     |     └── password_manager.html
-    |     └── PassGen.py
     ├── RedNeuronal
     |     ├── consoleFlappyMachine.py
     |     ├── DrawNumbers.py
     |     ├── flappyMachine.py
     |     └── Numbers.py 
-    ├── StudentsManagement
-    |     ├── StudentManagement.py
-    |     └── StudentManagement.db 
     ├── templates
     |     └── index.html
     ├── VIRUS
