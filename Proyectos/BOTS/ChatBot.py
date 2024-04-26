@@ -1,9 +1,12 @@
+import sys
 import re
 import random
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QTextEdit
+from PyQt5.QtGui import QColor
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QFont
 
-from langcodes import best_match
-
-bot_name = "Corvex"
+bot_name = "Juan"
 
 
 def get_response(user_input):
@@ -32,37 +35,33 @@ def message_probability(user_message, recognized_words, single_response=False, r
         return 0
 
 
-print("Hola soy " + bot_name + ", te ayudaré en lo que necesites. Dime que necesitas? Por favor solo usar de manera formal y recuerda que soy solamente un bot.")
-print("Recuerda que de igual manera si no entiendes algo puedes ver directamente el ClassRoom: https://classroom.google.com/c/MzE5MjI0NDU3OTk0")
-
-
 def check_all_messages(message):
     highest_prob = {}
 
     def response(bot_response, list_of_words, single_response=False, required_words=[]):
         nonlocal highest_prob
-        highest_prob[bot_response] = message_probability( 
+        highest_prob[bot_response] = message_probability(
             message, list_of_words, single_response, required_words)
 
-    response('Para hacer una sede, tienes que ir a nuevo contenido de envio y llenar los parametros que se te solicitan. Recuerda que el nombre siempre empieza con el tipo de envio, luego la sede y por último el área y programa. Por ejemplo: Mail Info - AR - CI - IPMII', [
+    response('Para hacer una sede, tienes que...', [
              'como', 'hacer', 'crea', 'sedes', 'donde', 'sede', 'registro'], single_response=True)
-    response('Se tienen que configurar 29 sedes. 23 sedes de habla hispana y 6 de habla portuguesa. Las abreviaturas de las sedes se encuentran en: https://drive.google.com/file/d/1Oj28DuNTTHpS9kOm8TkHk2aaxuHqzehT/view', [
+    response('Se tienen que configurar ... se encuentran en: https://github.com/Santi1503', [
              'cuantas', 'sedes', 'tienen', 'configuran', 'hacer', 'crear', 'generar', 'abreviaturas'], single_response=True)
-    response('Para adjuntar archivos en local se tienen que subir desde el apartado de "archivos adjuntos" y darle a "nuevo". Luego se sube un archivo desde la computadora. Para adjuntar archivos en producción, se tienen que encadenar del contenido general de la misma área.', [
+    response('Para adjuntar archivos ...', [
              'como', 'archivos', 'local', 'produccion', 'adjuntar'], single_response=True)
-    response('El link del sistema de gestion en local es: http://esec-team.ctdesarrollo.org/team-sublime/sirius-app/Escritorio/login , y el de produccion es: https://sg.funiber.org/si/Escritorio/login', [
+    response('El link... es: https://github.com/Santi1503 , y ... https://github.com/Santi1503', [
              'cual', 'sistema de gestion', 'link', 'produccion', 'local', 'sistema', 'gestion'], single_response=True)
-    response('Para generar una prueba de carta te puedes apoyar en este video: https://www.youtube.com/watch?v=OCnKJVw83Es&t=31s', [
+    response('Para generar ...: https://github.com/Santi1503', [
              'como', 'generar', 'pruebas', 'carta', 'cartas', 'envios', 'crear', 'hacer'], single_response=True)
-    response('Me puedes consultar: creación de sedes, cantidad de sedes a configurar, adjuntar archivos, sistema de gestión, generar cartas, drive de plantillas...', [
+    response('Me puedes consultar: ...', [
              'que', 'puedo', 'preguntar', 'consultar', 'ayuda', 'ayudar', 'como', 'puedes', 'ayudarme', 'ayudame'], single_response=True)
-    response('El drive de las plantillas HTML de las sedes se encuentra en: https://drive.google.com/drive/folders/12-7Esk7mTBNXW0rPoswLFy_bej-1kC0n?usp=sharing', [
+    response('El drive ...: https://github.com/Santi1503', [
              'donde', 'HTML', 'sedes', 'plantilla', 'esta', 'encuentro', 'encuentra', 'drive', 'html', 'cuales', 'plantillas', 'usar'], single_response=True)
-    response('Los pasos para generar un Mail Info es: ir al sistema de gestion -> personalizar envios -> buscar area solicitada, programa solicitado', [
+    response('Los pasos ...', [
              'como', 'pasos', 'hacer', 'mail', 'info', 'peticion', 'informacion', 'que', 'generar', 'crear'], single_response=True)
-    response('Los parametros que debes utilizar en LOCAL son: Para:"correopersonal@ct"; Bcc:"#SEDE_COPIA_OCULTA#"; de:"#SEDE_MAIL#"; Nombre Remitente:"BECA FUNIBER #SEDE_NOMBRE#"; Asunto:""BECA FUNIBER- #PROGRAMA_NOMBRE#', [
+    response('Los parametros que ...', [
              'cuales', 'parametros', 'requeridos', 'tienen', 'parametro', 'que'], single_response=True)
-    response('Los archivos adjuntos los tienes que sacar de producción directamente, esto para no tener problemas a la hora de tener algún archivo mal actualizado', [
+    response('Los ...', [
              'cuales', 'archivos', 'requeridos', 'tienen', 'catalogos', 'adjuntos', 'adjuntar', 'adjuntos'], single_response=True)
 
     best_match = max(highest_prob, key=highest_prob.get)
@@ -72,7 +71,63 @@ def check_all_messages(message):
 def unknown():
     response = ['Puedes decirlo otra vez?',
                 'No te entendi bien', 'No te pude ayudar, pero le puedes decir a tu SL'][random.randrange(3)]
+    return response
 
 
-while True:
-    print("Corvex: " + get_response(input('Tu: ')))
+class ChatbotGUI(QWidget):
+    def __init__(self):
+        print("iniciando chat...")
+        super().__init__()
+        self.init_ui()
+        self.append_message("Hola soy " + bot_name + ", te ayudaré en lo que necesites. Dime que necesitas? Por favor solo usar de manera formal y recuerda que soy solamente un bot.", QColor("#1617FE"))
+        self.append_message("", QColor("#1617FE"))
+        self.append_message("", QColor("#1617FE"))
+
+    def init_ui(self):
+        self.setWindowTitle("Chatbot")
+        self.setGeometry(100, 100, 600, 400)
+
+        self.setStyleSheet("background-color: #F4EDE8;")
+
+        self.text_edit = QTextEdit()
+        self.text_edit.setReadOnly(True)
+        
+        font = QFont("Arial", 12)
+        
+        self.text_edit.setFont(font)
+
+        self.input_line = QLineEdit()
+        self.input_line.returnPressed.connect(self.send_message)
+
+        send_button = QPushButton("Send")
+        send_button.setStyleSheet("background-color: #00007A; color: white;")
+        send_button.clicked.connect(self.send_message)
+
+        input_layout = QHBoxLayout()
+        input_layout.addWidget(self.input_line)
+        input_layout.addWidget(send_button)
+
+        main_layout = QVBoxLayout()
+        main_layout.addWidget(self.text_edit)
+        main_layout.addLayout(input_layout)
+
+        self.setLayout(main_layout)
+
+    def send_message(self):
+        user_input = self.input_line.text()
+        self.append_message("You: " + user_input, QColor("#1617FE"))
+        response = get_response(user_input)
+        self.append_message(bot_name + " :" + response, QColor("#007FFE"))
+        self.input_line.clear()
+
+    def append_message(self, message, color):
+        self.text_edit.setTextColor(color)
+        self.text_edit.append(message)
+        self.text_edit.setTextColor(Qt.black)
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = ChatbotGUI()
+    window.show()
+    sys.exit(app.exec_())
