@@ -10,7 +10,7 @@ webbrowser.open("https://web.whatsapp.com")
 tm.sleep(7)
 pg.moveTo(278, 215)
 pg.click()
-pg.typewrite("Geff")
+pg.typewrite("...")
 pg.press("enter")
 
 tm.sleep(3)

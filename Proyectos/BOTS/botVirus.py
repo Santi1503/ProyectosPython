@@ -1,15 +1,17 @@
 from xmlrpc.client import boolean
 import pyautogui as pg
 import time as tm
+import subprocess
 
 from regex import P
 
 tm.sleep(5)
 number = 0
-while number <15:
-    pg.moveTo(15,1060)
-    pg.click()
+while number < 10:
+    """pg.press('win')
     pg.typewrite("Bloc de notas")
     pg.press("enter")
-    number = number +1
-
+    tm.sleep(1)"""
+    
+    subprocess.Popen('start cmd', shell=True)
+    number = number + 1
