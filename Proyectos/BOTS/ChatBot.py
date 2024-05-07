@@ -6,7 +6,7 @@ from PyQt5.QtGui import QColor
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont
 
-bot_name = "Juan"
+bot_name = "Rodulfo Domingo"
 
 
 def get_response(user_input):
